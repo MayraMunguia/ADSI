@@ -78,12 +78,8 @@ WSGI_APPLICATION = 'cv.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'adsi_pag',
-        'USER': 'root',
-        'PASSWORD': 't38l7b+a',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase.db',
 
     }
 }
