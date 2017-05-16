@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+ <html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {% load staticfiles %}
+
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+        <script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+
+    </head>
+    <body>
+       
+
+      
+        <div class="sidebar-menu hidden-xs hidden-sm">
+            <div class="top-section">
+                <div class="profile-image">
+                    <img src="../../static/img/profile.jpg">
+                </div>
+                <h3 class="profile-title">Mayra Munguia (Hope) </h3>
+                <p class="profile-description">Estudiante Ingeniería en Sistemas</p>
+            </div> 
+            <div class="main-navigation">
+                <ul class="navigation">
+                    <li><a href="#top"><i class="fa fa-globe"></i>Home</a></li>
+                    <li><a href="#about"><i class="fa fa-pencil"></i>Acerca de Mi</a></li>
+                    <li><a href="#projects"><i class="fa fa-paperclip"></i>Conocimientos y Habilidades</a></li>
+                    <li><a href="#contact"><i class="fa fa-link"></i>¡Contactame!</a></li>
+                </ul>
+            </div> <!-- .main-navigation -->
+            <div class="social-icons">
+                <ul>
+                <center>
+                    <li><a href="https://www.facebook.com/MayraMunguiaP"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/Mayra_Munguia"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/mayra-mungu%C3%ADa-51b036125/"><i class="fa fa-linkedin"></i></a></li>
+                    </center>
+                </ul>
+            </div> 
+        </div> 
+        
+
+        <div class="banner-bg" id="top">
+            <div class="banner-overlay"></div>
+            <div class="welcome-text">
+                <h2>¡Hola!</h2>
+                <h5>Bienvenido a mi pagina personal, mi nombre es Mayra Munguia, Desarrolladora de Software e Ingeniera en Sistemas in the making.</h5>
+
+                 <center><img src="../../static/img/loading.gif"></center>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="fluid-container">
+
+                <div class="content-wrapper">
+                
+                   
+                    <div class="page-section" id="about">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">Acerca de mi</h4>
+                            <!--
+                            <div class="about-image">
+                                <img src="../../static/img/f2.jpg" alt="about me">
+                            </div>
+                            -->
+                            <p>Originaria de Hermosillo, Sonora, 21 años, Curso el 6to Semestre de la carrera de Ingeniería en Sistemas de la información
+                            	en la Uniersidad de Sonora, apasionada de la intelingencia Artificial y el aprendizaje de maquinas,
+                            	esperando que un dia las 3 leyes de la robotica de Asimov tengan una aplicación real y necesaria.</p>
+
+
+                            	<center><img src="../../static/img/large.gif"></center>
+                            <hr>
+                        </div>
+                    </div> 
+                    </div>
+                    
+                   
+                    <div class="page-section" id="projects">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">Conocimientos y Datos</h4>
+                          	<ul id="double">
+   								 <li>Idiomas: Inglés 100%, Alemán 40%</li>
+    							<li>Conocimiento en: Java, C#, Python, Ensamblador, PHP, HTML, SQL, Javascript, MATLAB</li>
+    							<li>Uso de Entornos Linux/Unix </li>
+   								 <li>Conocimiento de Adobe Creative Suite y Excel</li>
+    							<li>Conocimiento de soporte y reparación de computadoras</li>
+    							</ul>
+
+    							<center><img src="../../static/img/robot.gif"></center>
+                        </div>
+                    </div>
+                   
+                    </div>
+                    <hr>
+
+                    
+                    <div class="page-section" id="contact">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">Ponte en contacto conmigo</h4>
+                            <p>Ponte en contacto conmigo llenando este formulario o por medio de las mi correo MayraHopem@gmail.com, o por las redes sociales que se listan a la izquierda! Contestaré a la brevedad posible.</div>
+                    </div>
+                    <div class="row">
+                    	 {% block content %}
+                        <form method="POST" class="contact-form"> {% csrf_token %}
+                        {{ form.as_p }}
+                            <fieldset class="col-md-4 col-sm-6">
+                                <input type="text" id="your-name" placeholder="Tu nombre...">
+                            </fieldset>
+                            <fieldset class="col-md-4 col-sm-6">
+                                <input type="email" id="email" placeholder="Tu correo...">
+                            </fieldset>
+                            <fieldset class="col-md-4 col-sm-12">
+                                <input type="text" id="your-subject" placeholder="Razón...">
+                            </fieldset>
+                            <fieldset class="col-md-12 col-sm-12">
+                                <textarea name="message" id="message" cols="30" rows="6" placeholder="Deja tu mensaje..."></textarea>
+                            </fieldset>
+                            <fieldset class="col-md-12 col-sm-12">
+                                <input type="submit" class="button big default" value="Enviar">
+                            </fieldset>
+                        </form>
+                         {% endblock %}
+
+                    </div> 
+                    </div>
+                    <hr>
+
+                    <div class="row" id="footer">
+                        <div class="col-md-12 text-center">
+                            <p class="copyright-text">Copyright &copy; 2017 Mayra Munguia</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/min/plugins.min.js"></script>
+        <script src="js/min/main.min.js"></script>
+
+    </body>
+</html>
