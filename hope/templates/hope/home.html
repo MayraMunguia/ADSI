@@ -1,157 +1,104 @@
 <!DOCTYPE html>
- <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-      
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html class="no-js"}>
+<head>
+<title>Luis Carlos Villaescusa</title>
 
-        {% load staticfiles %}
+ {% load staticfiles %}
+<link href="../../static/css/styles.css" rel="stylesheet" type="text/css">
 
-        <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
-        <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
-        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-        <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
-        <script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
 
-    </head>
-    <body>
-       
+</head>
 
-      
-        <div class="sidebar-menu hidden-xs hidden-sm">
-            <div class="top-section">
-                <div class="profile-image">
-                    <img src="../../static/img/profile.jpg">
-                </div>
-                <h3 class="profile-title">Mayra Munguia (Hope) </h3>
-                <p class="profile-description">Estudiante Ingeniería en Sistemas</p>
-            </div> 
-            <div class="main-navigation">
-                <ul class="navigation">
-                    <li><a href="#top"><i class="fa fa-globe"></i>Home</a></li>
-                    <li><a href="#about"><i class="fa fa-pencil"></i>Acerca de Mi</a></li>
-                    <li><a href="#projects"><i class="fa fa-paperclip"></i>Conocimientos y Habilidades</a></li>
-                    <li><a href="#contact"><i class="fa fa-link"></i>¡Contactame!</a></li>
-                </ul>
-            </div> <!-- .main-navigation -->
-            <div class="social-icons">
-                <ul>
-                <center>
-                    <li><a href="https://www.facebook.com/MayraMunguiaP"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/Mayra_Munguia"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/mayra-mungu%C3%ADa-51b036125/"><i class="fa fa-linkedin"></i></a></li>
-                    </center>
-                </ul>
-            </div> 
-        </div> 
+<body>
+<center>
+<div id="header">
+
+	<ul id="main-menu">
+    
+    	<li><a href="#about">Acerca de mi</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#connect">Contactame</a></li>
         
+    </ul>
+   
+</div>
+ </center>
 
-        <div class="banner-bg" id="top">
-            <div class="banner-overlay"></div>
-            <div class="welcome-text">
-                <h2>¡Hola!</h2>
-                <h5>Bienvenido a mi pagina personal, mi nombre es Mayra Munguia, Desarrolladora de Software e Ingeniera en Sistemas in the making.</h5>
+<div id="container">
 
-                 <center><img src="../../static/img/loading.gif"></center>
-            </div>
+<!--Begin About Section-->
+    <div id="about">
+    	<center><h1>Luis Carlos Villaescusa Saldate</h1></center>
+       
+        <div class="top-divider"></div>
+        <div class="content">
+        	<img src="../../static/img/designer-photo.jpg" />
+            <h2>¡Bienvenido!</h2>
+            <p>Mi nombre es Luis Carlos, nací en Hermosillo, Sonora, México y tengo 22 años.
+            Estudio la carrera de Ingeniería en Sistemas de la información en la Universidad de Sonora.
+            Apasionado de la electronica y el arduino.
+            </p> 
+            <ul id="service-icons">
+            	<li class="services-design">Design</li>
+                <li class="services-mobile">Mobile</li>
+                <li class="services-film">Film</li>
+                <li class="services-photo">Photo</li>
+            </ul>
         </div>
+    
+    </div>
+<!--End About Section-->
 
-        <div class="main-content">
-            <div class="fluid-container">
+<!--Begin Experience Section-->   
+    <div id="experience">
+    	<h1>Experiencia personal y laboral</h1>
+        <div class="top-divider"></div>
+        <div class="content">
+            <div class="col">
+            <h2>Hago codigo</h2>
+           <img src="../../static/img/ifs.gif" />
+            </div>
+            
+            <div class="col col-mid">
+            <h2>Hago cosas de hardware</h2>
+          <img src="../../static/img/ard.png" />
+            </div>
+            
+            <div class="col">
+            <h2>Doy asesoria de Software a otras carreras</h2>
+             <img src="../../static/img/cry.jpg" />
+            </div>
+        </div>    
+    </div>
+<!--End Experience Section-->
 
-                <div class="content-wrapper">
-                
-                   
-                    <div class="page-section" id="about">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="widget-title">Acerca de mi</h4>
-                            <!--
-                            <div class="about-image">
-                                <img src="../../static/img/f2.jpg" alt="about me">
-                            </div>
-                            -->
-                            <p>Originaria de Hermosillo, Sonora, 21 años, Curso el 6to Semestre de la carrera de Ingeniería en Sistemas de la información
-                            	en la Uniersidad de Sonora, apasionada de la intelingencia Artificial y el aprendizaje de maquinas,
-                            	esperando que un dia las 3 leyes de la robotica de Asimov tengan una aplicación real y necesaria.</p>
 
-
-                            	<center><img src="../../static/img/large.gif"></center>
-                            <hr>
-                        </div>
-                    </div> 
-                    </div>
-                    
-                   
-                    <div class="page-section" id="projects">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="widget-title">Conocimientos y Datos</h4>
-                          	<ul id="double">
-   								 <li>Idiomas: Inglés 100%, Alemán 40%</li>
-    							<li>Conocimiento en: Java, C#, Python, Ensamblador, PHP, HTML, SQL, Javascript, MATLAB</li>
-    							<li>Uso de Entornos Linux/Unix </li>
-   								 <li>Conocimiento de Adobe Creative Suite y Excel</li>
-    							<li>Conocimiento de soporte y reparación de computadoras</li>
-    							</ul>
-
-    							<center><img src="../../static/img/robot.gif"></center>
-                        </div>
-                    </div>
-                   
-                    </div>
-                    <hr>
-
-                    
-                    <div class="page-section" id="contact">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="widget-title">Ponte en contacto conmigo</h4>
-                            <p>Ponte en contacto conmigo llenando este formulario o por medio de las mi correo MayraHopem@gmail.com, o por las redes sociales que se listan a la izquierda! Contestaré a la brevedad posible.</div>
-                    </div>
-                    <div class="row">
-                    	 {% block content %}
-                        <form method="POST" class="contact-form"> {% csrf_token %}
-                        {{ form.as_p }}
-                            <fieldset class="col-md-4 col-sm-6">
-                                <input type="text" id="your-name" placeholder="Tu nombre...">
-                            </fieldset>
-                            <fieldset class="col-md-4 col-sm-6">
-                                <input type="email" id="email" placeholder="Tu correo...">
-                            </fieldset>
-                            <fieldset class="col-md-4 col-sm-12">
-                                <input type="text" id="your-subject" placeholder="Razón...">
-                            </fieldset>
-                            <fieldset class="col-md-12 col-sm-12">
-                                <textarea name="message" id="message" cols="30" rows="6" placeholder="Deja tu mensaje..."></textarea>
-                            </fieldset>
-                            <fieldset class="col-md-12 col-sm-12">
-                                <input type="submit" class="button big default" value="Enviar">
-                            </fieldset>
-                        </form>
-                         {% endblock %}
-
-                    </div> 
-                    </div>
-                    <hr>
-
-                    <div class="row" id="footer">
-                        <div class="col-md-12 text-center">
-                            <p class="copyright-text">Copyright &copy; 2017 Mayra Munguia</p>
-                        </div>
-                    </div>
-
+<!--Begin Connect Section-->  
+    <div id="connect">
+    	<h1>Enviame un mensaje.</h1>
+        <div class="top-divider"></div>
+        	<div class="content">
+             {% block content %}
+            <center>
+            	<div id="form">
+                	<form method="POST" class="contact-form"> {% csrf_token %}
+                    	<span>Nombre</span>
+                        <input type="text" name="name" class="name" />
+                        <span>Correo</span>
+                        <input type="text" name="email" class="email"/>
+                        <span>Mensaje</span>
+                        <textarea class="message"></textarea>
+                        <input type="submit" name="submite" value="Submit" class="submit">
+                    </form>
+                     {% endblock %}
                 </div>
-
+            </center>
             </div>
-        </div>
+    </div>
+<!--End Connect Section--> 
 
-        <script src="js/vendor/jquery-1.10.2.min.js"></script>
-        <script src="js/min/plugins.min.js"></script>
-        <script src="js/min/main.min.js"></script>
+</div>
 
-    </body>
+
+</body>
 </html>

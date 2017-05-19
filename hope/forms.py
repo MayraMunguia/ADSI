@@ -5,4 +5,4 @@ from .models import Mensaje
 
         class Meta:
             model = Mensaje
-            fields = ('Nombre','Correo', 'Asunto','Mensaje',)
+            fields = ('Nombre','Correo','Mensaje',)
